@@ -14,7 +14,7 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../..'))
+import sphinx_rtd_theme
 
 
 # -- Project information -----------------------------------------------------
@@ -68,7 +68,7 @@ language = None
 exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
+pygments_style = 'sphinx'
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -76,41 +76,8 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-#
-html_theme_options = {
-    "anchor": "#ececec",
-    "anchor_hover_bg": "#ffffff",
-    "anchor_hover_fg": "#03a9f4",
-    "body_text": "#000000",
-    "code_font_family": "Roboto Mono",
-    "code_font_size": "13.6px",
-    "description": "A Python wrapper for the Blue Brain Nexus REST API.",
-    "font_family": "Roboto",
-    "font_size": "16px",
-    "github_button": True,
-    "github_count": True,
-    "github_repo": "nexus-python-sdk",
-    "github_type": "watch",
-    "github_user": "BlueBrain",
-    "head_font_family": "Roboto",
-    "link": "#03a9f4",
-    "link_hover": "#00b8d4",
-    "logo": "nexus_logo.png",
-    "logo_name": True,
-    "logo_text_align": "middle",
-    "pre_bg": "#ececec",
-    "relbar_border": "#2d2f38",
-    "show_relbar_bottom": True,
-    "sidebar_collapse": False,
-    "sidebar_header": "#000000",
-    "sidebar_link": "#000000",
-    "sidebar_text": "#000000",
-}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
